@@ -1,0 +1,107 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    list-style: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background{
+    background-image: url('./images/imgBackGround 1.png');
+    background: #252B42;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 67px;
+    /* padding-top: 30px; */
+}
+
+.container{
+        max-width: 1140px;
+        margin: 0 auto;
+}
+
+.header, .header__ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    padding: 30px 0 134px;
+    /* margin-bottom: 134px; */
+}
+
+.header__li:not(:last-of-type){
+    margin-right: 21px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 367px;
+    margin-bottom: 42px;
+    display: flex;
+}
+
+.map-mark{
+    margin-right: 10px;
+}
+
+.header-form{
+    background: rgba(29, 34, 40, 0.7);
+    padding: 15px;
+}
+
+.input{
+    width: 277px;
+    height: 60px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding-left: 28px;
+    box-sizing: border-box;
+}
+
+.input::placeholder{
+    color: #C7C7C7;
+
+}
+
+.button{
+    width: 186px;
+    height: 60px;
+    background: #23A6F0;
+    border-radius: 30px;
+    border: none;
+    margin-left: 22px;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}

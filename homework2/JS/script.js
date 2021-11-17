@@ -18,6 +18,16 @@
 // console.log(numResult + userReply);
 // why NO appears anyway
 
+// const num1 = Number(prompt('Number 1'));
+// const num2 = Number(prompt('Number 2'));
+// if(num1 > num2){
+//     alert('Number' + num1 + "is bigger than" +  "Number" + num2) ;
+// } else if (num1 < num2) {
+//     alert ('Number $ {num1} is bigger than number $ {num2}') ;
+// }
+// else{
+//     alert('The numbers are equal');
+// }
 
 // let  tellNumber = Number(prompt("Tell me the number"));
 // console.log('the number is', tellNumber);
@@ -53,32 +63,70 @@
 // console.log( 'the result of multiplying  these numbers is:', result);
 // alert(result);
 
+// const a = Number(prompt('Enter number'));
+// const action = prompt('Enter action(+,-,* or /');
+// const b = Number(prompt('Enter number'));
+// let result;
+
+// switch (action) {
+//     case "+":
+//         result = a + b;
+//         break;
+//     case "-":
+//         result = a - b;
+//         break;
+//     case "*":
+//         result = a * b;
+//          break;   
+//     case "/":
+//          result = a / b;
+//         break;  
+//     default:
+//         result = "Incorrect action"
+// }
+// alert(result);
 //Американські горик
 
-const childMinAge  = 18;
-const childVisitAge = Number(prompt('How old are you?'));
-const areWithParents = confirm('Are you with parents?');
-if (childVisitAge >= childMinAge || areWithParents){
-    console.log('You can visit our rollercoaster!');
-    alert ('You can visit our rollercoaster!');
-}else {
-    console.log('Sorry, you are too young. Bring up parents next time.');
-    alert( 'Sorry, you are too young. Bring up parents next time.')
-}
+// const childMinAge  = 18;
+// const childVisitAge = Number(prompt('How old are you?'));
+// const areWithParents = confirm('Are you with parents?');
+// if (childVisitAge >= childMinAge || areWithParents){
+//     console.log('You can visit our rollercoaster!');
+//     alert ('You can visit our rollercoaster!');
+// }else {
+//     console.log('Sorry, you are too young. Bring up parents next time.');
+//     alert( 'Sorry, you are too young. Bring up parents next time.')
+// }
 
-const oldMaxAge  = 60;
-const oldVisitAge = Number(prompt('How old are you?'));
-let areOldWithParents = confirm('Are you with parents?');
-if (oldVisitAge >= oldMaxAge || areOldWithParents){
-    console.log('You can visit our rollercoaster!');
-    alert ('You can visit our rollercoaster!');
-}else {
-    console.log('Sorry, you are too young. Bring up parents next time.');
-    alert( 'Sorry, you are too young. Bring up parents next time.')
+// const oldMaxAge  = 60;
+// const oldVisitAge = Number(prompt('How old are you?'));
+// let areOldWithParents = confirm('Are you with parents?');
+// if (oldVisitAge >= oldMaxAge || areOldWithParents){
+//     console.log('You can visit our rollercoaster!');
+//     alert ('You can visit our rollercoaster!');
+// }else {
+//     console.log('Sorry, you are too young. Bring up parents next time.');
+//     alert( 'Sorry, you are too young. Bring up parents next time.')
+// }
+// const adulminage = 18;
+// const adultMaxAge = 60;
+// const averageAdultAge = 18 
+
+const userAge = Number(prompt('How old are you?'));
+if ((userAge >= 12 &&  userAge < 18) || (userAge >= 60 && userAge < 80)) {
+    const isAdults = confirm('Are you with parents?');
+    if(isAdults) {
+        alert("Please,come inside");
+    } else {
+        alert('Nope');
+    }
 }
-const adulminage = 18;
-const adultMaxAge = 60;
-const averageAdultAge = 18 
+else if (userAge < 12 || userAge >= 80){
+    alert('Nope');
+}
+else{
+    alert("Please,come inside");
+}
 
 
 

@@ -1,0 +1,76 @@
+.container{
+    width: 700px;
+    height: 700px;
+    border: 20px solid blueviolet;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(19, 19, 34);
+}
+
+
+.div-tooltip{
+    opacity:0;
+    position: fixed;
+    background: rgb(82, 82, 185);
+    color: rgb(220, 231, 218);
+    z-index: 9999;
+    top:  -.25rem;
+	left: 50%;
+    width: max-content;
+    max-width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    /* transform: translateX(-50%), translateY(-100%);
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    --translate-y: calc(-1 * var(--arrow-size));
+    border: var(--arrow-size) solid transparent;
+    border-top-color:aqua;
+    transform-origin: top center; */
+  
+
+}
+div.button{
+    position: relative;
+}
+.button{
+   position: absolute;
+    padding: 20px;
+    width: 420px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background:rgb(201, 49, 201);
+    border-radius: 50%;
+    border-color: aquamarine;
+    border-width: 20px;
+    font-size: 20px;
+    color: rgb(11, 56, 56);
+}
+
+
+.data-tooltip::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #05F2AE;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+.triangle-1 {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-bottom: solid 30px rgb(200,30,50);
+    border-left: solid 30px rgb(200,30,50);
+    border-right: solid 30px transparent;
+    border-top: solid 30px transparent;
+    transform: translateX(200%);
+  }

@@ -17,8 +17,8 @@ a{
 }
 
 .background{
-    background-image: url('./images/imgBackGround 1.png');
-    background: #252B42;
+    background-image: url(../images/imgBackGround1.png);
+    /* background: #252B42; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

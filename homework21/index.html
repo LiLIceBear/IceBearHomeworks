@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <form action="#" class="board-form" id="board-form">
+                <select  id="item-type" class="input">
+                    <option value="Starship">Starship</option>
+                    <option value="Planet">Planet</option>
+                    <option value="Vehicle">Vehicle</option>
+                </select>
+                <input
+                 type="text"
+                 id="item-id" 
+                 class="input"
+                 placeholder="Enter the ID"
+                  >
+
+                  <button type="submit" id="btn" class="sbt-btn">
+                      Submit
+                  </button>
+            </form>
+        </header>
+    </div>
+<div class="container">
+    <div class="board"> </div>
+    <div class="i-d-spinner" id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
